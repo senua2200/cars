@@ -1,0 +1,381 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+body{
+    background-image: url(./image/road-g9875459d1_1920\ 1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 750px;
+}
+
+.container{
+    max-width: 1200px;   
+    width: 100%; 
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 100%; */
+}
+
+.header ul li{
+    display: inline-block;
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    margin-right: 35px;
+    color: white;
+}
+
+.header ul li:nth-child(4){
+    margin-right: 0px;
+}
+
+.nav_link_main{
+    border-bottom: 2px solid white;
+}
+
+.lng{
+    text-transform: uppercase;
+}
+
+.lng span{
+    color: #B7B7B7;
+    margin-right: 8px;
+}
+
+.lng span:nth-child(2){
+    margin-right: 0;
+}
+
+
+.intro{ 
+    padding: 200px 0 0 0;
+    position: relative;
+}
+
+.text{
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 150%; /* 72px */
+    text-transform: uppercase;
+    width: 70%;
+    margin-bottom: 53px;
+}
+
+.butt{
+    background: #db2512;
+    padding: 11px 48px;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+
+.one_block{
+    display: flex;
+    margin-top: 180px;
+    padding: 0;
+}
+.block_full{
+    background: #FFF;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+    padding: 39px 48px 30px 39px;
+    /* Потом может помешать */
+    min-width: 386px; 
+    height: 171px;
+    position: relative;
+}
+.block_full p{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 150%;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    letter-spacing: 2.5px;
+}
+.block_full span{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #B7B7B7;
+}
+
+.vb{
+    width: 386px;
+    margin-right: 21px;
+}
+
+.blockkk{
+    margin-right: 0;
+
+}
+
+.block_full::before{
+    content: "";
+    background-image: url(./image/phone.svg);
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.blockk::before{
+    content: "";
+    background-image: url(./image/cal.svg);
+}
+.blockkk::before{
+    content: "";
+    background-image: url(./image/map.svg);
+}
+
+
+.services{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.tx{
+    margin-bottom: 60px;
+}
+.tx h2{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 150%;
+    margin-bottom: 15px;
+}
+.tx a{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.card_all{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_full p{
+    margin-top: 21px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 4.6px;
+}
+
+.card_full{
+    position: relative;
+}
+
+/* .card_full:last-child{
+    margin-right: 0;
+} */
+
+
+/* .overlay{
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    width: 100%;
+    height: 89.5%;
+    top: 0;
+    left: 0;
+    display: none;
+} */
+
+/* .card_full:hover .overlay{
+    display: block;
+} */
+
+.plas{
+    width: 381px;
+    max-height: 500px;
+}
+
+.card_full img{
+    height: 500px;
+    width: 100%;
+}
+
+.card_all .vb{
+    margin-right: 0;
+    width: 381px;
+}
+
+.card_full .plas:hover::before{
+    content: url(./image/plus.png);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.card_full .plas:hover::after{
+    content: "ANNUAL CHECKUPS FROM YOUR PHYSICIAN KEEP YOU IN GOOD HEALTH";
+    width: 70%;
+    height: auto;
+    position: absolute;
+    top: 65%;
+    left: 10%;
+    z-index: 2;
+    color: #FFF;
+}
+
+
+.col_color{
+    background-color: #171616;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #171616;
+}
+
+.about_text h2{
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 4.5px;
+    margin-top: 117px;
+    width: 490px;
+}
+
+.about_text p{
+    color: #B7B7B7;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 3.45px;
+    margin-top: 42px;
+    width: 506px;
+}
+
+.about_text a{
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    text-decoration-line: underline;
+    letter-spacing: 2.7px;
+    margin-top: 48px;
+    margin-bottom: 117px;
+    display: inline-block;
+}
+
+.wh{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.wh h2{
+    color: #000;
+    font-size: 148px;
+    font-weight: 900;
+    line-height: 150%;
+}
+
+.wh p{
+    color: #000;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+
+.card2{
+    display: flex;
+    margin-top: 92px;
+    margin-bottom: 100px;
+    margin-top: 60px;
+    /* gap: 20px; */
+    padding: 0;
+}
+
+.card2 p{
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.card2 span{
+    color: #B7B7B7;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;  
+}
+
+.card2_shadow{
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+    padding-top: 30px;
+    padding-bottom: 20px;
+    min-width: 386px;
+    text-align: left;
+    position: relative;
+    padding: 30px 30px 30px 30px;
+    height: 171px;
+}
+
+.gr{
+    width: 386px;
+    margin-right: 21px;
+}
+
+.card2_shadow:last-child{
+    margin-right: 0;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 66px;
+    padding-bottom: 66px;
+}
+
+.footer p{
+    color: #000;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 150%; /* 22.5px */
+    letter-spacing: 2.25px;
+}
+
+.gp img{
+    margin-left: 20px;
+}
+
+.gp img:nth-child(1){
+    margin-left: 0;
+}
+
+.gp {
+    height: 25px;
+}
